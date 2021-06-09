@@ -1,0 +1,20 @@
+{
+  "name": "closest-points-between-two-lines",
+  "version": "1.0.0",
+  "description": "Find the two closest points on two 3D lines.",
+  "main": "./lib/index.js",
+  "typings": "./lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest --config jestconfig.json"
+  },
+  "keywords": [],
+  "author": "x6ud",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^26.0.9",
+    "jest": "^26.2.2",
+    "ts-jest": "^26.1.4",
+    "typescript": "^3.9.7"
+  }
+}
