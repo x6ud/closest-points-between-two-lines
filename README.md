@@ -3,13 +3,32 @@
 ### Function
 
 ```typescript
-function closestPointsBetweenTwoLines(
+/**
+ * Find the two closest points on two 3D lines.
+ * Return true if two lines are parallel.
+ *
+ * @param out1 Output - The closest point on line 1.
+ * @param out2 Output - The closest point on line 2.
+ * @param p1x X of a point on line 1.
+ * @param p1y Y of a point on line 1.
+ * @param p1z Z of a point on line 1.
+ * @param n1x X of the unit vector of the direction of line 1.
+ * @param n1y Y of the unit vector of the direction of line 1.
+ * @param n1z Z of the unit vector of the direction of line 1.
+ * @param p2x X of a point on line 2.
+ * @param p2y Y of a point on line 2.
+ * @param p2z Z of a point on line 2.
+ * @param n2x X of the unit vector of the direction of line 2.
+ * @param n2y Y of the unit vector of the direction of line 2.
+ * @param n2z Z of the unit vector of the direction of line 2.
+ */
+export default function closestPointsBetweenTwoLines(
     out1: Vec3 | null, out2: Vec3 | null,
     p1x: number, p1y: number, p1z: number,
     n1x: number, n1y: number, n1z: number,
     p2x: number, p2y: number, p2z: number,
-    n2x: number, n2y: number, n2z: number,
-): void;
+    n2x: number, n2y: number, n2z: number
+): boolean
 ```
 
 Calculate the formula with the following code:
@@ -31,8 +50,7 @@ lhs = p1 + t1 * n1 + t3 * n3
 rhs = p2 + t2 * n2
 
 result = solve(lhs - rhs, t1, t2, t3)
-print(result[t1])
-print(result[t2])
+print(result)
 ```
 
 See https://math.stackexchange.com/questions/1993953/closest-points-between-two-lines
