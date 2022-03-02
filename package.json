@@ -10,6 +10,11 @@
   },
   "keywords": [],
   "author": "x6ud",
+  "homepage": "https://github.com/x6ud/closest-points-between-two-lines",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/x6ud/closest-points-between-two-lines.git"
+  },
   "license": "MIT",
   "devDependencies": {
     "@types/jest": "^26.0.9",

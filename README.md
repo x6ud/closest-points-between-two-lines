@@ -3,6 +3,8 @@
 ### Function
 
 ```typescript
+type Vec3 = [number, number, number] | Float32Array | Float64Array
+
 /**
  * Find the two closest points on two 3D lines.
  * Return true if two lines are parallel.
@@ -22,7 +24,7 @@
  * @param n2y Y of the unit vector of the direction of line 2.
  * @param n2z Z of the unit vector of the direction of line 2.
  */
-export default function closestPointsBetweenTwoLines(
+function closestPointsBetweenTwoLines(
     out1: Vec3 | null, out2: Vec3 | null,
     p1x: number, p1y: number, p1z: number,
     n1x: number, n1y: number, n1z: number,
